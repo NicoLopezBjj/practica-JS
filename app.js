@@ -52,7 +52,19 @@ async function obtenerDatos(urls) {
     }
 })();
 
+    // Iteración Asíncrona:
+    // Escribe una función iterar que acepte un número y una función de retorno de llamada. La función de retorno de llamada debería ejecutarse en un bucle async, iterando desde 1 hasta el número proporcionado.
 
+   async function iterar (numero,callback){
+        for(let i = 1; i <= numero ; i++)
+            await callback(i)
+    }
+
+   async function miFuncion(numero){
+    console.log(`Ejecutandose con ${numero}`)
+   }
+
+   iterar(10,miFuncion)
 
 
 
