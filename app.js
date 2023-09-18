@@ -66,40 +66,4 @@ async function obtenerDatos(urls) {
 
    iterar(10,miFuncion)
 
-
-
-
-// function simularCarga (url){
-//     return new Promise((resolve,reject)=>{
-//         setTimeout(()=>{
-//             const exito = Math.random() < 0.8
-//             if (exito) {
-//                 resolve (`Datos cargados de ${url}`)
-//             } else {
-//                 reject (`Error al cargar datos de ${url}`)
-//             }
-//         },2000)
-//     })
-// }
-
-// async function obtenerDatos () { 
-//     try{
-//         console.log('Cargando datos..')
-//         const promesas = urls.map (url => simularCarga(url))
-//         const resultado = await Promise.all(promesas)
-//         console.log(resultado)
-//     } catch (error) {
-//         console.log('Error al cargar los datos', error)
-//     }
-// }
-
-
-
-
-
-// obtenerDatos(urls)
-//     .then(datos => {
-//         console.log('Datos cargados con exito')
-//         datos.forEach(dato => console.log(dato))
-//     })
-//     .catch(error => console.error ('Error al cargar los datos',error))
+ 
