@@ -42,7 +42,6 @@ async function obtenerDatos(urls) {
     }
 }
 
-
 (async () => {
     try {
         const datos = await obtenerDatos(urls);
