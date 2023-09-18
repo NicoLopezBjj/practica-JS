@@ -66,4 +66,18 @@ async function obtenerDatos(urls) {
 
    iterar(10,miFuncion)
 
- 
+//   Manejo de Tiempo de Espera:
+//     Crea una función esperar que tome un número y espere ese número de milisegundos antes de resolver una promesa.
+
+function esperar(tiempo){
+    return new Promise (resolve =>{
+        setTimeout(()=>{
+            resolve()
+        },tiempo)
+    })
+}
+
+esperar(2000)
+.then(()=>{
+    console.log('Tiempo de espera 2 segundos')
+})
